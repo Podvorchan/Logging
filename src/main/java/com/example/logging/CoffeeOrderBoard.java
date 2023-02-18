@@ -48,7 +48,6 @@ public class CoffeeOrderBoard {
     }
   }
 
-
   public void draw() {
     if (!orders.isEmpty()) {
       log.info("Queue status: ");
@@ -61,7 +60,6 @@ public class CoffeeOrderBoard {
       log.info("No orders ");
     }
   }
-
 
   private boolean checkOrderNumber(int number) {
     return !orders.isEmpty() && orders.stream().map(Order::getOrderNumber)
